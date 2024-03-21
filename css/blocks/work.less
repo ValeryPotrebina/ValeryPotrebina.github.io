@@ -1,0 +1,50 @@
+// main: ../style.less\
+
+
+.work {
+    // overflow: hidden - спрятать, что вылезает за пределы блока
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 4px fade(@black, 25%);
+
+    transition: box-shadow .2s linear;
+
+    cursor: pointer;
+
+    &:hover {
+    box-shadow: 0 0 20px fade(@black, 25%);
+    }
+
+    @media @mobile {
+        max-width: 370px;
+    }
+
+    @media @mobile-sm {
+        margin: 0 auto;
+    }
+}
+.work__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work__content {
+    padding: 1rem 0.8rem;
+}
+
+.work__cat {
+    font-size: 0.8rem;
+    color: @black;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.work__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
